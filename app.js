@@ -1,9 +1,9 @@
-//importar as configs do servidor
-const {app,porta} = require('./config/servidor')
+//importar as configs do servido
+const {porta, app} = require('./config/servidor')
 
-//ligar o servidor
+//ligar o servidor 
 app.listen(porta,()=>{
-    console.log("http://localhost:"+porta)
+    console.log("http://localost:"+porta)
 })
 
- 
+module.exports = {app,porta}
